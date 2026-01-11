@@ -12,7 +12,6 @@ let numbers = [
     [[9, 10]]
 ]
 
-let result = 0 // Вместо нуля напишите собственное решение.
-               // Используйте методы flatMap и reduce.
+let result = numbers.flatMap{ $0 }.flatMap{ $0 }.reduce(0, +)
 
 print("Сумма элементов типа Int: \(result)")
